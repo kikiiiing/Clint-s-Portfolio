@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clint's Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <script src="https://kit.fontawesome.com/003177764e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+       <div class="container">
+           <nav>
+             <img src=".vscode/logo.png" class="logo">
+             <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Sample Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+             </ul>
+             <i class="fas fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            
+            <h1>Hi, I'm<span> Clint</span><br>from Philippines</h1>
+
+            <p>Graphic Designer/Virtual Assistant</p>
+          </div>
+    </div>
+</div>
+
+<!--About Page-->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src=".vscode/kiking.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>
+                    I am a registered electrical engineer from the Philippines who aspires to pursue a career online.
+                    Had an experience as a web designer using wordpress but can also do hard code for front end web development.
+                    As a dynamic and driven individual, I enjoy being challenged and is willing to learn new skillsets to fit into any
+                    job requirement. <br>
+                    <br>
+                    Outside my professional life, I hone my artistic skills by doing traditional artworks. I also enjoy learning new things and
+                    is currently learning back end web develepment. <br> 
+                    <br>
+                    Looking forward to offering my assistance to you and your company!
+
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                        <li><span>Virtual Assistance</span><br>Email management<br>Appointment setting<br>Microsoft tasks</li>
+                        <li><span>Graphic Design</span><br>Infographics<br>Basic photo editing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI/UX (2022)</span><br>Designed Web interfaces using wordpress.</li>
+                        <li><span>Virtual Assistance (2023-Present)</span><br>Managed:<br>Appointments<br>Microsoft tasks such as excel<br>Emails</li>
+                        <li><span>Graphic Design (2023-Present)</span><br>Designed in-deph infographics and brochures for certain companies.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Degree in Bachelor of Science in Electrical Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Services Page-->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Graphic Design</h2>
+                <p>I have skills in graphic design, leveraging versatile tools like Canva to
+                     create visually striking and engaging content. My work encompasses a range
+                      of design needs, from sleek business presentations to vibrant social media graphics.
+                       By combining creativity with a keen understanding of design principles, I craft visuals
+                        that effectively communicate ideas and resonate with audiences.
+                </p>
+                <a href="#contact">Send a message.</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Virtual Assistance</h2>
+                <p>I offer virtual assistance services with a focus on streamlining your workflow 
+                    through efficient email management and appointment-setting. Utilizing Microsoft 
+                    tools like Outlook for scheduling and Excel for organizing data, I ensure that your 
+                    calendar is well-managed and your communications are effectively handled. My goal is 
+                    to simplify your day-to-day tasks, allowing you to focus on the bigger picture while I
+                     take care of the details.</p>
+                <a href="#contact">Send a message.</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI/UX</h2>
+                <p>I specialize in web design, utilizing technologies like HTML, CSS, and platforms such
+                     as WordPress to create stunning and user-friendly websites. Whether I'm coding from 
+                     scratch in Visual Studio Code or customizing WordPress themes, I focus on delivering 
+                     responsive, accessible, and visually appealing web solutions. My designs are tailored 
+                     to meet your unique needs, providing a seamless user experience that helps you stand 
+                     out in the digital world.</p>
+                <a href="#contact">Send a message.</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Portfolio Page-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Sample Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src=".vscode/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src=".vscode/work-2.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src=".vscode/work-3.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#header" class="btn">Back to top</a>
+    </div>
+</div>
+
+<!--Contact Page-->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>clintcolaljo@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+639979916630</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/clintcolaljo"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/cclintc"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="insert downloadable file" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+    <p>Copyright ⓒ Clint Colaljo <i class="fa-solid fa-robot"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwH9yRgd2B2rkknRzK4n5Rwy75Jos4lMe_gxH97WZMcfasC4SatigU_-Tg79M05lSruSw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    </body>
+</html>
